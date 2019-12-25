@@ -1,0 +1,42 @@
+﻿# Site settings
+title: '醒了和起床可是两码事'
+description: '今天外卖吃什么呢？'
+
+baseurl: '/blog'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+future: true
+
+author:
+  name: '醒了和起床可是两码事'
+  email: 1010964899@qq.com
+  github_username:  'zhubin1219'
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
