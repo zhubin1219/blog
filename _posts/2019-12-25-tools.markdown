@@ -2,7 +2,7 @@
 title:  "一些工具的推荐"
 date:   2019-12-25 22:09:23
 categories: [tools]
-tags: [other]
+tags: [其他]
 ---
 
 思维导图工具:

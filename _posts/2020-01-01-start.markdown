@@ -1,8 +1,8 @@
 ---
 title:  "新年"
 date:   2020-01-01 00:00:00
-categories: [Inadvertently]
-tags: [Inadvertently]
+categories: [其他]
+tags: [其他]
 ---
 
 ​	新的一年开始啦~

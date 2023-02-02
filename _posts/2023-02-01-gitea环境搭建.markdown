@@ -1,0 +1,31 @@
+---
+title:  "Gitea环境搭建"
+date:   2023-02-01 00:00:00
+categories: [git]
+tags: [环境搭建]
+---
+
+# Window Service 2019 搭建Gitea  
+## 环境准备  
+1. [Git安装](https://git-scm.com/)
+2. [Gitea软件包](https://github.com/go-gitea/gitea/releases)  
+
+**安装文件**
+Gitea下载后解压到安装目录位置安装，双击运行即可
+![安装文件](../../images/blog/20230201/微信截图_20230202102440.png)
+
+**Git安装成功结果**
+![Git安装成功](../../images/blog/20230201/微信截图_20230202102720.png)
+
+**Gitea安装成功结果**
+![Gitea安装成功](../../images/blog/20230201/微信截图_20230202103122.png)
+
+
+## Gitea数据库配置
+登录默认3000端口 <http://localhost:3000/>
+**数据库配置**
+![数据库配置](../../images/blog/20230201/微信图片_20230202103636.png)  
+
+##其他
+**这里用的是腾讯云服务器 window Service 2019，所以还需要设置服务器防火墙规则，开放3000端口**
+![端口规则](../../images/blog/20230201/微信截图_20230202104107.png) 
