@@ -82,7 +82,7 @@ tags: [环境搭建]
 
 **1. 安装Zookeeper**
 可以使用 `docker search zookeeper` 查找Zookeeper也可以直接使用 docker Desktop Search 直接查找相关image，网上全是linux相关命令，这里我就直接贴docker Desktop Search结果了
-![zookeeperImage](../../images/blog/20230201/微信截图_20230202145028.png)
+![zookeeperImage](../../images/blog/20230201/微信截图_20230202150732.png)
 
 **理论上镜像我们都第一选择选择官方镜像，不过考虑到后续kafka的镜像，这里使用了同一作者发布的Zookeeper image**
 `docker pull wurstmeister/zookeeper` 也可以docker Desktop 直接pull，效果一样
@@ -97,7 +97,7 @@ tags: [环境搭建]
 `docker pull wurstmeister/kafka` 也可以docker Desktop 直接pull，效果一样  
 
 **根据 wurstmeister/kafka image 启动三个容器 模拟三个服务器broker**
-**BROKER 0**
+**BROKER 0**  
 `docker run -d --name kafka0 -p 9092:9092 -e KAFKA_BROKER_ID=0 -e KAFKA_ZOOKEEPER_CONNECT=192.168.0.101:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://192.168.0.101:9092 -e KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092 -t wurstmeister/kafka
 `  
 **BROKER 1**
