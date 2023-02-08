@@ -1,0 +1,63 @@
+---
+title:  "Fiddler抓包手机APP请求"
+date:   2023-02-01 00:00:00
+categories: [其他]
+tags: [工具]
+---
+
+# Fiddler抓包手机APP请求
+## Fiddler工具下载  
+[Fiddler官网下载](https://www.telerik.com/fiddler)  
+
+**安装文件**
+`Fiddler下载后解压到安装目录位置安装，双击运行即可`
+
+**配置修改**
+![options](../../images/blog/20230208/微信图片_20230208161916.png)  
+
+![options](../../images/blog/20230208/微信截图_20230208162339.png)  
+
+|参数|说明
+|:---:|:---:
+|Decrypt HTTPS traffic|截获HTTPS请求,选择来源，缩小来源范围，首次点击会提示安装证书，一直确认就好
+|Ignore server certificate errors(unsafe)| 忽略服务器证书错误（不安全）
+|Check for certificate revocation|检查证书吊销
+|Actions|首次点击会提示安装证书，一直确认就好，后续可以导出证书啥的，没用过
+  
+![options](../../images/blog/20230208/微信截图_20230208163741.png)  
+|参数|说明
+|:---:|:---:
+|Fiddler Classic listens on port|Fiddler监听端口，后续抓包安卓手机端需要用到
+|Allow remote computers to connect| 允许远程计算机连接,类似抓包手机端需要开启
+|Reuse client connections|重用客户端的连接(提高性能)
+|Reuse server connections|重用到服务器的连接(提高性能)
+|Automatically reload script when changed|脚本发生变化时自动重载
+|Monitor all connections|监听所以连接  
+
+**使用设置**  
+`Fillder过滤请求`
+![image](../../images/blog/20230208/微信截图_20230208165200.png)  
+
+`手机端设置`  
+wifi设置
+![image](../../images/blog/20230208/微信截图_20230208170834.png) 
+
+下载ca证书  
+![image](../../images/blog/20230208/微信截图_20230208170944.png)  
+
+安装ca证书  
+![image](../../images/blog/20230208/微信截图_20230208171029.png)  
+
+
+**监听结果**  
+![image](../../images/blog/20230208/微信截图_20230208165414.png)  
+
+**思考**
+至此我们已经获取到请求信息，如果想要模拟则需要复刻请求过程，这里我们也可以借助一些工具帮助把http请求转为相应代码，这里先说如何产生需要的基础资料，后续再介绍相关插件  
+
+![image](../../images/blog/20230208/微信图片_20230208170502.png)  
+
+
+## 其他
+[Fiddler其他功能说明可以查阅这里](https://blog.51cto.com/u_15403315/4288888)  
+
