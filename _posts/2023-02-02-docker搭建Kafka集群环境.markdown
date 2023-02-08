@@ -25,7 +25,7 @@ tags: [环境搭建]
 
 ## docker环境安装  
 
-> 此处根据微软官方文档[window 安装WSL 2](https://learn.microsoft.com/zh-cn/windows/wsl/install)  
+**此处根据微软官方文档[window 安装WSL 2](https://learn.microsoft.com/zh-cn/windows/wsl/install)**
 
 ### window11 环境安装  
 
